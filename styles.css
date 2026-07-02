@@ -1132,3 +1132,30 @@ h1 em, h2 em {
   .hero-brandmark { justify-content: flex-start; }
   .hero-brandmark-tag { letter-spacing: .22em; }
 }
+ .btn-review {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: #4285F4;
+  color: #fff;
+  border-radius: 8px;
+  font-family: 'Mulish', sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  transition: background 0.2s ease;
+}
+.btn-review:hover { background: #3367D6; }
+
+/* Opción A */
+.map-review {
+  margin-top: 24px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(0,0,0,.08);
+}
+.map-review-text {
+  font-family: 'Mulish', sans-serif;
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
