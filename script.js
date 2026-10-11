@@ -282,7 +282,7 @@ Me gustaría saber si mi caso es apto para atención online. ¡Gracias!`;
      6. Animaciones de entrada al hacer scroll
      ---------------------------------------------------------- */
   const revealTargets = document.querySelectorAll(
-    ".section, .card, .svc, .team-card, .tech-card, .step, .when-list li, .hero-copy, .hero-visual"
+    ".section:not(.no-reveal), .card, .svc, .team-card, .tech-card, .step, .when-list li, .hero-copy, .hero-visual"
   );
 
   if ("IntersectionObserver" in window) {
