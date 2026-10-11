@@ -149,6 +149,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Botones con mensaje propio: <a data-wa-msg="texto">
+  document.querySelectorAll("[data-wa-msg]").forEach(function (el) {
+    el.addEventListener("click", function (e) {
+      e.preventDefault();
+      openWhatsApp(el.getAttribute("data-wa-msg"));
+    });
+  });
+
 
   /* ----------------------------------------------------------
      4b. Test de telerehabilitación (modal)
@@ -242,7 +250,8 @@ Me gustaría saber si mi caso es apto para atención online. ¡Gracias!`;
 
   /* Logo del navbar: subir de verdad al inicio de la página */
   const brandLink = document.querySelector(".brand");
-  if (brandLink) {
+  const isHome = location.pathname === "/" || location.pathname === "/index.html";
+  if (brandLink && isHome) {
     brandLink.addEventListener("click", function (e) {
       e.preventDefault();
       const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
