@@ -1228,7 +1228,7 @@ h1 em, h2 em {
 .post-meta { display: flex; flex-wrap: wrap; gap: .4rem 1.2rem; font-size: .88rem; color: var(--texto-suave); }
 .post-meta strong { color: var(--azul-oscuro); }
 
-.post-figure { float: left; width: clamp(230px, 44%, 360px); margin: .3rem 1.8rem 1.2rem 0; }
+.post-figure { float: left; width: clamp(260px, 50%, 460px); margin: .3rem 1.8rem 1.2rem 0; }
 .post-figure img { width: 100%; height: auto; display: block; border-radius: 22px; box-shadow: var(--shadow-md); aspect-ratio: 1672 / 941; object-fit: cover; }
 .post-figure figcaption { font-size: .82rem; color: var(--texto-suave); font-style: italic; margin-top: .7rem; text-align: center; }
 
